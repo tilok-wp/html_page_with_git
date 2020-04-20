@@ -73,8 +73,8 @@ if (taskProcess == 'dev'){
         },
         contentBase: path.join(__dirname, 'app'),
         hot: true,
-        port: 3300,
-        host: '127.0.0.1'
+        port: 3000,
+        host: 'localhost'
     },
     config.mode = 'development'
 
@@ -111,9 +111,4 @@ if (taskProcess == 'build') {
         new AfterCompile()
     )
 }
-
-
-
-
-
 module.exports = config
